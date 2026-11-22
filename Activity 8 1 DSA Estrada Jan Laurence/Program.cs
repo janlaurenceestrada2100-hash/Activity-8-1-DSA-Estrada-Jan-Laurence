@@ -32,7 +32,7 @@ namespace DSA_Activity_81_Estrada_JanLaurence
                         case "1":
 
                             Console.WriteLine("Enter Key:");
-                            int key = (Convert.ToInt32(Console.ReadLine()));
+                            string key = (Console.ReadLine());
                             if (recht.ContainsKey(key) == false)
                             {
                                 Console.WriteLine("Enter Value:");
@@ -46,7 +46,7 @@ namespace DSA_Activity_81_Estrada_JanLaurence
 
                         case "2":
                             Console.WriteLine("Enter Key:");
-                            key = (Convert.ToInt32(Console.ReadLine()));
+                            key = (Console.ReadLine());
 
                             if (recht.ContainsKey(key) == true)
                             {
