@@ -10,12 +10,13 @@ namespace DSA_Activity_81_Estrada_JanLaurence
         public static void Main(string[] args)
         {
             /*
-             * 
+             * Data Structure &amp; Algorithm
+             * Activity 8.1
+             * HashTable
              */
             try
             {
                 var recht = new Hashtable();
-                var data = new Stack<int>();
                 string choice = "0";
                 Console.WriteLine("Record Keeping Program");
                 while (choice != "4")
