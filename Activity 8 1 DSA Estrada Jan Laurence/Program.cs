@@ -10,7 +10,7 @@ namespace DSA_Activity_81_Estrada_JanLaurence
         public static void Main(string[] args)
         {
             /*
-             * Data Structure &amp; Algorithm
+             * Data Structure and Algorithm
              * Activity 8.1
              * HashTable
              */
