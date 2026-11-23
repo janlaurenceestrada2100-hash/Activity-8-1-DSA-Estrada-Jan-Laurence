@@ -17,6 +17,7 @@ namespace DSA_Activity_81_Estrada_JanLaurence
                 var recht = new Hashtable();
                 var data = new Stack<int>();
                 string choice = "0";
+                Console.WriteLine("Record Keeping Program");
                 while (choice != "4")
                 {
                     Console.WriteLine("[1] Add Data");
@@ -31,41 +32,51 @@ namespace DSA_Activity_81_Estrada_JanLaurence
                     {
                         case "1":
 
-                            Console.WriteLine("Enter Key:");
+                            Console.Write("Enter Key:");
                             string key = (Console.ReadLine());
                             if (recht.ContainsKey(key) == false)
                             {
-                                Console.WriteLine("Enter Value:");
-                                int val = (Convert.ToInt32(Console.ReadLine()));
+                                Console.Write("Enter Value:");
+                                string val = (Console.ReadLine());
                                 recht.Add(key, val);
+                                Console.WriteLine("key added");
+                                Console.WriteLine($"");
                             }
                             else { Console.WriteLine("key duplicate"); }
+                            Console.WriteLine($"");
 
                             break;
 
 
                         case "2":
-                            Console.WriteLine("Enter Key:");
+                            Console.Write("Enter Key:");
                             key = (Console.ReadLine());
 
                             if (recht.ContainsKey(key) == true)
                             {
                                 recht.Remove(key);
+                                Console.WriteLine("key removed");
+                                Console.WriteLine($"");
+
                             }
                             else { Console.WriteLine("key not found"); }
+                            Console.WriteLine($"");
 
                             break;
 
                         case "3":
 
                             Console.WriteLine("\t-Key-\t-Value-");
+
                             foreach (DictionaryEntry i in recht)
                             {
                                 Console.WriteLine($"\t{i.Key}\t{i.Value}");
                             }
+                            Console.WriteLine($"");
 
                             break;
                         case "4":
+                            Console.Write("Thank you");
 
                             break;
 
